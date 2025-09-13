@@ -1,0 +1,7 @@
+Conditional rendering
+- always refer boolean condition while in conditional rendering
+-How to handle props
+-designed props as a object and give it through component internally
+-and used in main component by giving values
+--Good and basic clear props management , keep it for reference
+-- based on mood, composes mail and footer

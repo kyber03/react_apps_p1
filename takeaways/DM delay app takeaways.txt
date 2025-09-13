@@ -1,0 +1,11 @@
+Basically the logic is 
+to set time once the message is typed by clicking the enter button. And if we see that message is needs to be unsend, we need to cancel the message.
+
+
+
+We need state handling using 5 usestates ---
+1. to store the message(usestate variable) we type in textarea
+2.once enter button, message needs to drop under another state which is for display and textarea becomes empty
+3. Adding the sendhandle function while clicking enter, to delay for the message to be sent into textarea. By using settimeout. The button will be changed into "Cancel Message"
+4. Then if we want to cancel, we will add handlecancel function on this changed button "Cancel Message" to clear the timeout. 
+5. In between this , we need to detect whether the message is sendingmode or not - so we use another Boolean usestate to set this value based on the condition
